@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,45 +23,44 @@
 </div>
     <!-- <div class="left-side">
       <div class="left-side-wrapper">
-        <div class="home-btn"><h4 class="front-face">Home</h4><h4 class="back-face"><i class="fa fa-home fa-3x"></i></h4></div>
-        <div class="home-btn"><h4 class="front-face">About</h4><h4 class="back-face"><i class="fa fa-user fa-3x"></i></h4></div>
-        <div class="home-btn"><h4 class="front-face">Contact</h4><h4 class="back-face"><i class="fa fa-address-book fa-2x"></i></h4></div>
+        <div class="left-menu-btn" onclick="menuItemActivated('home')">
+          <h4 class="back-face">Home</h4>
+          <h4 class="front-face"><i class="fa fa-home fa-3x"></i></h4>
+        </div>
+        <div class="left-menu-btn" onclick="menuItemActivated('about')">
+          <h4 class="back-face">About</h4>
+          <h4 class="front-face"><i class="fa fa-user fa-3x"></i></h4>
+        </div>
+        <div class="left-menu-btn" onclick="menuItemActivated('contact')">
+          <h4 class="back-face">Contact</h4>
+          <h4 class="front-face"><i class="fa fa-address-book fa-2x"></i></h4>
+        </div>
       </div>
     </div>
-    
+
     <div class="roll-container">
       <div class="roll-content">
         <div class="roller">
           <div class="roll-unit"></div>
         </div>
-        <div style="margin-left: 75px">
-          <img
-            src="./Assests/images/coder.png"
-            alt="image of a progreammer"
-            width="200"
-            height="250"
-          />
-        </div>
-        <div style="color: #fff; width: 65%">
-          <h2>About Me</h2>
-          <p style="text-align: justify">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
+        <div class="right-side-contents">
+          <div class="home-btn-content" id="home-content">
+            <h1>HOME</h1>
+          </div>
+          <div class="about-btn-content" id="about-content">
+            <h1>About</h1>
+          </div>
+          <div class="contact-btn-content" id="contact-content">
+            <h1>Contact</h1>
+          </div>
+
         </div>
       </div>
     </div> -->
 
     <!-- Below scripts are either libraries or external js files -->
     <script src="index.js"></script>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
