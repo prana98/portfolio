@@ -1,8 +1,11 @@
+
+
 :root{
   --carpet-bg-back: #ff8550;
   --carpet-bg-front: #e57748;
   --text-color: #000000;
   --menu-btn-bg: #e57748;
+  --body-bg:blueviolet
 }
 
 .wip {
@@ -12,19 +15,23 @@
   align-items: center;
   height: 500px;
 }
-body {
-  /* background-color: #fff !important; 
+body { 
   display: grid;
-  grid-template-columns: 300px 1fr; */
+  grid-template-columns: 300px 1fr;
+  background-color: var(--body-bg)  !important;
 }
 
 /*roll*/
+.right-side{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .roll-container {
   width: 100%;
-  height: 90vh;
+  height: 80%;
   position: relative;
   overflow: hidden;
-  padding: 10px 0;
   float: right;
 }
 
@@ -35,25 +42,26 @@ body {
   position: absolute;
   top: 0;
   right: 0%;
-  margin: 50px 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   display: flex;
   align-items: center;
   column-gap: 20px;
   color: var(--text-color);
-  box-shadow: inset 0 0 50px white;
+  /* box-shadow: inset 0 0 50px white; */
 }
 .roller {
   width: 75%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--body-bg);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  animation: roller 2s forwards;
   position: absolute;
   z-index: 1;
   margin-right: 20px;
+}
+.roller_animate{
+  animation: roller 2s forwards;
 }
 @keyframes roller {
   0% {
@@ -67,9 +75,29 @@ body {
   }
   
   100% {
-    width: 2%;
+    width: 0%;
   }
 }
+
+.roller_unroll_animate{
+  animation: un_roller 2s forwards;
+}
+@keyframes un_roller {
+  0% {
+    width: 0%;
+  }
+  50%{
+    width: 70%;
+  }
+  75%{
+    width: 50%;
+  }
+  
+  100% {
+    width: 100%;
+  }
+}
+
 .roll-unit {
   width: 10%;
   height: 100%;
@@ -120,4 +148,10 @@ body {
 .back-face{
   transform: rotateY(180deg);
   position: absolute;
+}
+.content-css{
+  text-align: justify;
+  width: 90%;
+  color: var(--text-color);
+  font-size: 11pt;
 }
